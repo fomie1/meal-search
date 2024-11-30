@@ -22,7 +22,7 @@ watch(route, () => {
     </div>
 
     <div class="flex justify-center gap-2 mt-2">
-         <router-link :to="{name: 'MealsByLetter', params:{letter}}" v-for="letter in letters" :key="letter">
+         <router-link :to="{name: 'MealsByLetter', params: {letter}}" v-for="letter in letters" :key="letter">
             {{ letter }}
         </router-link>
     </div>

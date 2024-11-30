@@ -15,7 +15,7 @@ const { meals } = defineProps({
     <MealItem v-for="meal in meals" :key="meal.idMeal" :meal="meal"></MealItem>
 </div>
 
-<div v-if="!meals.length" class="flex justifiy-center text-gray-600">
+<div v-if="!meals.length" class="flex justify-center text-grey-600">
     Meals Not Found
 </div>
 
