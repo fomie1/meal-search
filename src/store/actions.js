@@ -19,6 +19,6 @@ export function searchMealsByLetter({ commit }, letter) {
 export function searchMealsByIngredient({ commit }, ingredient) {
     api.get(`filter.php?i=${ingredient}`)
         .then(({ data }) => {
-        commit('setMealsByIngredient', data.meals)
+            commit('setMealsByIngredient', data.meals)
     })
 }
